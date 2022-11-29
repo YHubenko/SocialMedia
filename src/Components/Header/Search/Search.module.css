@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: #ffffff;
+    width: 20%;
+    height: 52px;
+    display: flex;
+    border-radius: 20px;
+    overflow-x: hidden;
+    box-shadow: 5px 6px 20px rgba(62, 72, 118, 0.11);
+    position: fixed;
+}
+.input {
+    width: 233px;
+    height: 52px;
+    border: none;
+    background: none;
+    margin-right: 15px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+.magnifier {
+    width: 24px;
+    height: 24px;
+    margin: 14px;
+}
+.magnifier:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background-color: #fff;
+}
+.icon {
+    width: 17px;
+    height: 22px;
+    margin: 15px 18px;
+}
+.wrapper:hover {
+    cursor: pointer;
+}

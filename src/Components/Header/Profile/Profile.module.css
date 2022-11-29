@@ -1,0 +1,33 @@
+.wrapper {
+    width: 141px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #272B36;
+    text-align: left;
+}
+.statusBlock {
+    display: flex;
+}
+.status {
+    font-weight: 400;
+    font-size: 15px;
+    color: #626469;
+}
+.statusIcon {
+    width: 10px;
+    height: 10px;
+    margin: 7px 8px;
+}
+.avatar {
+    width: 52px;
+    height: 52px;
+}
+.statusBlock:hover,
+.avatar:hover {
+    cursor: pointer;
+}

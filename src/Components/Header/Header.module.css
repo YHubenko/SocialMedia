@@ -1,0 +1,14 @@
+.wrapper {
+    width: 100vw;
+    height: 52px;
+    margin: 20px 20px 0 144px;
+    display: flex;
+    justify-content: space-between;
+}
+.rightBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 352px;
+    position: fixed;
+    right: 40px;
+}

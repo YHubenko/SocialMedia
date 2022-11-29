@@ -1,0 +1,33 @@
+.wrapper {
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    margin: 10px 2.5%;
+}
+.addNewPostBlock {
+    width: 105%;
+    position: relative;
+    left: -2.5%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #c7c7c7;
+    border-radius: 15px;
+}
+.plus {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 0 10px;
+}
+.plus:hover {
+    cursor: pointer;
+}
+.input {
+    resize: none;
+    width: 95%;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin: 8px 10px 0;
+}

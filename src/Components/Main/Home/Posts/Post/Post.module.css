@@ -1,0 +1,19 @@
+.wrapper {
+    width: 97%;
+    margin: 25px auto;
+}
+.author {
+    display: flex;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+}
+.username {
+    font-size: 18px;
+    margin: auto 0 auto 15px;
+}
+.image {
+    width: 100%;
+    margin: 10px 0;
+}

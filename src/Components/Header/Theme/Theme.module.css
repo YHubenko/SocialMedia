@@ -1,0 +1,33 @@
+.wrapper {
+    width: 100px;
+    height: 52px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 16px;
+    justify-content: space-between;
+}
+.chosen {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(209, 218, 255, 0.4);
+    border: 1px solid #3162FF;
+    border-radius: 13px;
+    margin: 6px;
+}
+.sun,
+.moon {
+    width: 44px;
+    height: 44px;
+}
+.sun {
+    margin: 4px;
+}
+.moon {
+    margin: 4px 4px 4px 0;
+}
+.sun:hover,
+.moon:hover,
+.chosen:hover {
+    cursor: pointer;
+}

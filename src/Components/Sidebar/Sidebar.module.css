@@ -1,0 +1,35 @@
+.wrapper {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 84px;
+    height: 94vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 6px 20px rgba(62, 72, 118, 0.11);
+}
+.logo {
+    width: 28px;
+    height: 28px;
+    margin: 28px 28px 0 28px;
+}
+.buttons {
+    display: block;
+    width: 100%;
+}
+.btn {
+    display: block;
+    margin: 30px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.setting {
+    width: 24px;
+    height: 24px;
+    margin: 32px 30px;
+}
+.hidden {
+    visibility: hidden;
+}
