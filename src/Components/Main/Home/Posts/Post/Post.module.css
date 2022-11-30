@@ -1,6 +1,6 @@
 .wrapper {
-    width: 97%;
-    margin: 25px auto;
+    width: 95%;
+    margin: 25px auto 35px;
 }
 .author {
     display: flex;
@@ -15,5 +15,5 @@
 }
 .image {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0 0;
 }
