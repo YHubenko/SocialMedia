@@ -27,7 +27,7 @@ function App(props) {
                         <Route path={"/SocialMedia/settings"} element={<Settings/>}/>
                         <Route path={"/SocialMedia/profile"} element={<Profile/>}/>
                     </Routes>
-                    <FriendsBar/>
+                    <FriendsBar friends={props.state.friendsPage.friends} dispatch={props.dispatch}/>
                 </Main>
             </div>
         </div>
