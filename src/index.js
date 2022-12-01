@@ -7,15 +7,18 @@ import store from "./data/state";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-let renderDom = (state) => {
+let rerenderDom = (state) => {
     root.render(
         <BrowserRouter>
             <App state={state} store={store} dispatch={store.dispatch.bind(store)}/>
         </BrowserRouter>
     )
 }
-store.subscribe(renderDom);
-renderDom(store.getState());
+rerenderDom(store.getState());
+store.subscribe(() => {
+    let state = store.getState();
+    rerenderDom(state)
+});
 
 
 // root.render(

@@ -9,6 +9,7 @@ import {NavLink} from "react-router-dom";
 
 
 const Sidebar = (props) => {
+
     return (
         <div className={style.wrapper}>
             <NavLink to={"/SocialMedia/"}><img src={logo} alt="" className={style.logo}/></NavLink>
