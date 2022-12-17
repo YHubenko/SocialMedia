@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./FriendsBar.module.css";
-import Friends from "./Friends/Friends";
+import FriendsContainer from "./Friends/FriendsContainer";
 
-const FriendsBar = (props) => {
+const FriendsBar = () => {
     return (
         <div className={style.wrapper}>
-            <Friends friends={props.friends}/>
+            <FriendsContainer/>
         </div>
     )
 }

@@ -1,26 +1,24 @@
 import React from "react";
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../../data/homeReducer";
 import style from "./Posts.module.css";
 import Post from "./Post/Post";
 import plus from "../../../../assets/main/posts/plus.png";
 
 const Posts = (props) => {
-    let postElement = props.posts.map(post => <Post username={post.username} message={post.message} likes={post.likesAmount}/>)
+    console.log(props)
+    let postElement = props.posts.map(post => <Post username={post.username} message={post.message} likes={post.likesAmount} path={post.path}/>)
     let newPostElement = React.createRef();
     let addPost = () => {
-        props.dispatch(addPostActionCreator());
-        newPostElement.current.value = "";
+        props.addPost();
     }
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = updateNewPostTextActionCreator(text);
-        props.dispatch(action);
+        props.updateNewPostText(text);
     }
     return (
         <div className={style.wrapper}>
             <div className={style.addNewPostBlock}>
                 <img src={plus} alt="" className={style.plus} onClick={addPost}/>
-                <textarea onChange={onPostChange} value={props.newPostText} ref={newPostElement} className={style.input} placeholder={"Enter text"}></textarea>
+                <textarea onChange={onPostChange} ref={newPostElement} className={style.input} placeholder={"New post"}></textarea>
             </div>
             {postElement}
         </div>

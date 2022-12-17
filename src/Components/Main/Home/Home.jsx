@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Home.module.css";
-import Posts from "./Posts/Posts";
+import PostsContainer from "./Posts/PostsContainer";
 
-const Home = (props) => {
+const Home = () => {
     return (
         <div className={style.wrapper}>
-            <Posts posts={props.posts} dispatch={props.dispatch}/>
+            <PostsContainer/>
         </div>
     )
 }
